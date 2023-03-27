@@ -2,6 +2,50 @@
 
 https://web.stanford.edu/class/cs101/bits-bytes.html
 
+## Numbers
+
+### Decimal System (Base 10)
+
+The decimal number system is based on the ten digits 0 through 9. Using these digits, we can create any number we want by following a few rules. Firstly, each digit in a number has a value based on its position from right to left, starting from zero. The value of each position is a power of ten. Secondly, we can multiply the digit by its position's power of ten value, and then add up the results to get the final number. For example, the number 10 can be broken down into 1 times 10 to the power of 1, plus 0 times 10 to the power of 0, which equals 10.
+
+`1 * 10^1 + 0 * 10^0 = 10`
+
+| 10^3 (1000) |  10^2 (100) |  10^1 (10)  |  10^0 (1)  | Calculation | Result |
+| :---        | :---        | :---        |   :---     | :---        | :---   |
+| 0           |      0      |   1         |     0      |  10 * 1 + 1 * 0 | 10 |
+| 0           |      0      |   1         |     1      |  10 * 1 + 1 * 1 | 11 |
+| 0           |      0      |   3         |     9      |  10 * 3 + 1 * 9 | 39 |
+| 0           |      0      |   1         |     0      |  100 * 1 + 10 * 2 + 1 * 3 | 123|
+| 9           |      0      |   1         |     9      |  1000 * 9 + 100 * 0 + 10 * 1 + 1 * 9 | 9019|
+
+### Binary System (Base 2)
+
+Available digits are 0 and 1.
+
+| 2^3 (8) |  2^2 (4) |  2^1 (2)  |  2^0 (1)  | Calculation | Result in Binary | Result in Decimal |
+| :---        | :---        | :---        |   :---     | :---        | :---   | :---   |
+| 0           |      0      |   0         |     0      | 1 * 0 | 0 | 0 |
+| 0           |      0      |   0         |     1      | 1 * 1 | 1 | 1 |
+| 0           |      0      |   1         |     0      | 2 * 1 + 1 * 0 | 10 | 2 |
+| 0           |      0      |   1         |     1      | 2 * 1 + 1 * 1 | 11 | 3 |
+| 0           |      1      |   0         |     0      | 4 * 1 + 2 * 0 + 1 * 0 | 100 | 4 |
+| 0           |      1      |   0         |     1      | 4 * 1 + 2 * 0 + 1 * 1 | 101 | 5 |
+
+### Hexadecimal System (Base 16)
+
+Available digits are 0-9 and A-F.
+
+| 16^3 (4096) |  16^2 (256) |  16^1 (16)  |  16^0 (1)  | Calculation | Result in Hexadecimal | Result in Decimal |
+| :---        | :---        | :---        |   :---     | :---        | :---   | :---   |
+| 0           |      0      |   0         |     0      | 1 * 0 | 0 | 0 |
+| 0           |      0      |   0         |     1      | 1 * 1 | 1 | 1 |
+| 0           |      0      |   0         |     2      | 1 * 2 | 2 | 2 |
+| 0           |      0      |   0         |     A (10) | 1 * A => 1 * 10 | A | 10 |
+| 0           |      0      |   0         |     F (15) | 1 * F => 1 * 15 | F | 15 |
+| 0           |      0      |   1         |     0      | 16 * 1 + 1 * 0 | 16 | 16 |
+| 0           |      0      |   F         |     F      | 16 * F + 1 * F => 16 * 15 + 1 * 15 | FF | 255 |
+
+
 ## ASCII
 
 ASCII abbreviated from American Standard Code for Information Interchange, is a character encoding standard for electronic communication. ASCII codes represent text in computers, telecommunications equipment, and other devices. Most modern character-encoding schemes are based on ASCII, although they support many additional characters.
