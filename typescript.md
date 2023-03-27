@@ -272,3 +272,4 @@ Now we don't need to use non-null assertions.
 
 ## Functions
 
+https://www.typescriptlang.org/docs/handbook/2/functions.html
